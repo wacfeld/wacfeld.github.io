@@ -1,27 +1,40 @@
 <!doctype html>
 <html>
-    <heat>
+    <head>
         <title>time</title>
     </head>
-    <body>
-        <span id="time1"></span>
+    <!-- <body style="background-color:#171B1E;"> -->
+    <body style="background-color:#000000;">
+        <span id="time1" style="color:#ffffff;"></span>
+        <img src="triangle2.png" height="400px" alt="centered image" />
+
+        <div id="im">
         <span id="time2"></span>
+        </div>
         <style>
             #time1 {
-                font-family:consolas;
-                font-size:18px;
+                font-family:courier;
+                font-size:17px;
                 position:absolute;
                 left:10px;
                 top:10px;
             }
             #time2 {
-                font-family:consolas;
-                font-size:18px;
+                font-family:courier;
+                font-size:17px;
                 position:absolute;
                 text-align:right;
                 bottom:10px;
                 right: 10px;
             }
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+       }
         </style>
     </body>
     <script>
@@ -93,7 +106,8 @@ function pad(number, length) {
             yr +=(daysSinceNewYear()+hr/24-1)/days_of_a_year(oldyr);
 
             //document.getElementById("time").innerHTML += "<p>" + sec.toString().padEnd(10,"0") + "</p>" + "<p>" + min.toString().padEnd(10,"0") + "</p>" + "<p>" + hr.toString().padEnd(10,"0") + "</p>" + "<p>" + dat.toString().padEnd(10,"0") + "</p>" + "<p>" + mon.toString().padEnd(10,"0") + "</p>" + "<p>" + yr.toString().padEnd(10,"0") + "</p>";
-            document.getElementById("time2").innerHTML = "<p>" + sec.toFixed(1)+"&emsp;&emsp;&emsp;&nbsp;&nbsp;" + "</p>" + "<p>" + min.toFixed(3)+"&emsp;&emsp;&nbsp;&nbsp;" + "</p>" + "<p>" + hr.toFixed(5)+"&emsp;&nbsp;&nbsp;" + "</p>" + "<p>" + dat.toFixed(6)+"&nbsp;&nbsp;&nbsp;" + "</p>" + "<p>" + "   "+mon.toFixed(8)+"&nbsp;" + "</p>" + "" + yr.toFixed(9) + "";
+
+                document.getElementById("time2").innerHTML = "<p style='color:#ff0000;'>" + sec.toFixed(1)+"&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "</p>" + "<p style='color:#ffa500;'>" + min.toFixed(3)+"&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "</p>" + "<p style='color:#ffff00;'>" + hr.toFixed(5)+"&emsp;&nbsp;&nbsp;&nbsp;" + "</p>" + "<p style='color:#00ff00;'>" + dat.toFixed(6)+"&nbsp;&nbsp;&nbsp;" + "</p>" + "<p style='color:#0000ff;'>" + "   "+mon.toFixed(8)+"&nbsp;" + "</p>" + "<p style='color:#4b0082;'>" + yr.toFixed(9) + "</p>" + "<p style='color:#ee82ee'>C.E.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>";
         },100);
     </script>
 
