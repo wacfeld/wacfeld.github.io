@@ -107,7 +107,13 @@ function pad(number, length) {
 
             //document.getElementById("time").innerHTML += "<p>" + sec.toString().padEnd(10,"0") + "</p>" + "<p>" + min.toString().padEnd(10,"0") + "</p>" + "<p>" + hr.toString().padEnd(10,"0") + "</p>" + "<p>" + dat.toString().padEnd(10,"0") + "</p>" + "<p>" + mon.toString().padEnd(10,"0") + "</p>" + "<p>" + yr.toString().padEnd(10,"0") + "</p>";
 
-                document.getElementById("time2").innerHTML = "<p style='color:#ff0000;'>" + sec.toFixed(1)+"&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "</p>" + "<p style='color:#ffa500;'>" + min.toFixed(3)+"&emsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "</p>" + "<p style='color:#ffff00;'>" + hr.toFixed(5)+"&emsp;&nbsp;&nbsp;&nbsp;" + "</p>" + "<p style='color:#00ff00;'>" + dat.toFixed(6)+"&nbsp;&nbsp;&nbsp;" + "</p>" + "<p style='color:#0000ff;'>" + "   "+mon.toFixed(8)+"&nbsp;" + "</p>" + "<p style='color:#4b0082;'>" + yr.toFixed(9) + "</p>" + "<p style='color:#ee82ee'>C.E.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>";
+                document.getElementById("time2").innerHTML = "<p style='color:#ff0000;'>" +
+                  sec.toFixed(1)+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "</p>" + "<p style='color:#ffa500;'>" +
+                  min.toFixed(3)+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "</p>" + "<p style='color:#ffff00;'>" +
+                  hr.toFixed(5)+"&nbsp;&nbsp;&nbsp;&nbsp;" + "</p>" + "<p style='color:#00ff00;'>" +
+                  dat.toFixed(6)+"&nbsp;&nbsp;&nbsp;" + "</p>" + "<p style='color:#0000ff;'>" + "   "+
+                  mon.toFixed(8)+"&nbsp;" + "</p>" + "<p style='color:#4b0082;'>" +
+                  yr.toFixed(9) + "</p>" + "<p style='color:#e53fe5'>C.E.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>";
         },100);
     </script>
 
