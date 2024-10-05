@@ -82,7 +82,8 @@ function pad(number, length) {
     return str;
 
 }
-        var week = ['sun','mon','tue','wed','thu','fri','sat']
+        var week = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat','Sun']
+        var months = ['placeholder', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
         var d = new Date();
         setInterval(function() {
             d = new Date();
@@ -95,7 +96,11 @@ function pad(number, length) {
             var yr = d.getFullYear();
             var oldyr = yr;
 
-            document.getElementById("time1").innerHTML = "<span>" + d.getFullYear() + "-" + pad2(mon) + "-" + pad2(dat) + "(" + d.getDay() + ") " + pad2(hr) + ":" + pad2(min) + ":" + pad2(sec) + '.' + Math.floor(dec) + "</span>";
+            //document.getElementById("time1").innerHTML = "<span>" + d.getFullYear() + "-" + pad2(mon) + "-" + pad2(dat) + "(" + week[d.getDay()] + ") " + pad2(hr) + ":" + pad2(min) + ":" + pad2(sec) + '.' + Math.floor(dec) + "</span>";
+
+            document.getElementById("time1").innerHTML = `<span>${week[d.getDay()]} ${pad2(dat)} ${months[mon]} ${yr} ${pad2(hr)}:${pad2(min)}:${pad2(sec)}`
+
+// clean web development is beneath me
 
             sec += dec/10;
             min += sec/60;
