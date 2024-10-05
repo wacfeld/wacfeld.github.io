@@ -11,7 +11,7 @@
   font-size:17px;
   position:absolute;
   text-align:right;
-  bottom:10px;
+  bottom:0px;
   right: 10px;
 }
 
@@ -24,11 +24,11 @@ img {
 }
 span.infr::selection {
   background: #000000; /* WebKit/Blink Browsers */
-  color: #FED60B
+  color: #2FFF76
 }
 span.infr::-moz-selection {
   background: #000000; /* Gecko Browsers */
-  color: #FED60B
+  color: #2FFF76
 }
 
 #inf {
@@ -43,10 +43,10 @@ span.infr::-moz-selection {
 
 ::selection {
   background: #000000; /* WebKit/Blink Browsers */
-  color: #01004C
+  color: #4D004D
 }
 ::-moz-selection {
   background: #000000; /* Gecko Browsers */
-  color: #01004C
+  color: #4D004D
 }
 
