@@ -1,0 +1,52 @@
+#time1 {
+  font-family:courier;
+  font-size:17px;
+  position:absolute;
+  left:10px;
+  top:10px;
+}
+
+#bottomright {
+  font-family:courier;
+  font-size:17px;
+  position:absolute;
+  text-align:right;
+  bottom:10px;
+  right: 10px;
+}
+
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+span.infr::selection {
+  background: #000000; /* WebKit/Blink Browsers */
+  color: #FED60B
+}
+span.infr::-moz-selection {
+  background: #000000; /* Gecko Browsers */
+  color: #FED60B
+}
+
+#inf {
+  color: black;
+  text-decoration: none; /* no underline */
+}
+
+#infrared {
+    font-weight:bold;
+}
+
+
+::selection {
+  background: #000000; /* WebKit/Blink Browsers */
+  color: #01004C
+}
+::-moz-selection {
+  background: #000000; /* Gecko Browsers */
+  color: #01004C
+}
+
