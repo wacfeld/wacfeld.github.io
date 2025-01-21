@@ -86,5 +86,5 @@ setInterval(function() {
     // mon.toFixed(8)+"&nbsp;" + "</p>" + "<p style='color:#4b0082;'>" +
     mon.toFixed(8)+"&nbsp;" + "</p>" + "<p style='color:#0000ff;'>" +
     // yr.toFixed(9) + "</p>" + "<p style='color:#e53fe5'>C.E.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>";
-    yr.toFixed(9) + "</p>" + "<p style='color:#7700CF'>C.E.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>";
+    yr.toFixed(9) + "</p>" + "<p style='color:#FF00FF'>C.E.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>";
 },100);
