@@ -82,7 +82,9 @@ setInterval(function() {
     sec.toFixed(1)+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "</p>" + "<p style='color:#ffa500;'>" +
     min.toFixed(3)+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "</p>" + "<p style='color:#ffff00;'>" +
     hr.toFixed(5)+"&nbsp;&nbsp;&nbsp;&nbsp;" + "</p>" + "<p style='color:#00ff00;'>" +
-    dat.toFixed(6)+"&nbsp;&nbsp;&nbsp;" + "</p>" + "<p style='color:#0000ff;'>" + "   "+
-    mon.toFixed(8)+"&nbsp;" + "</p>" + "<p style='color:#4b0082;'>" +
-    yr.toFixed(9) + "</p>" + "<p style='color:#e53fe5'>C.E.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>";
+    dat.toFixed(6)+"&nbsp;&nbsp;&nbsp;" + "</p>" + "<p style='color:#00ffff;'>" + "   "+
+    // mon.toFixed(8)+"&nbsp;" + "</p>" + "<p style='color:#4b0082;'>" +
+    mon.toFixed(8)+"&nbsp;" + "</p>" + "<p style='color:#0000ff;'>" +
+    // yr.toFixed(9) + "</p>" + "<p style='color:#e53fe5'>C.E.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>";
+    yr.toFixed(9) + "</p>" + "<p style='color:#7700CF'>C.E.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>";
 },100);
