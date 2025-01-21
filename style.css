@@ -22,21 +22,21 @@ img {
   left: 50%;
   transform: translate(-50%, -60%);
 }
-span.infr::selection {
+span.uv::selection {
   background: #000000; /* WebKit/Blink Browsers */
   color: #2FFF76
 }
-span.infr::-moz-selection {
+span.uv::-moz-selection {
   background: #000000; /* Gecko Browsers */
   color: #2FFF76
 }
 
-#inf {
+#ps {
   color: black;
   text-decoration: none; /* no underline */
 }
 
-#infrared {
+#ultraviolet {
     font-weight:bold;
 }
 
